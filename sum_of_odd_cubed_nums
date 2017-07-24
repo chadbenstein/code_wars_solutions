@@ -1,0 +1,12 @@
+#Find the sum of the odd numbers within an array, after cubing the initial integers
+#This function will return None (because of ERROR) if any of the values aren't integers.
+
+def odd_cubed(arr):
+  try:
+    return sum(i**3 for i in arr if i%2!=0) #Python one-liner wahoo! cube the returned values if they're not divisible by 2
+  except:
+    return None
+
+
+#Can't use If/else .  Try/Except loop accounts for Errors.  Can write except for selected ERRORS
+
